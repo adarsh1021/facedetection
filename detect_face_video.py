@@ -18,7 +18,7 @@ while True:
     # Detect the faces
     faces = face_cascade.detectMultiScale(gray, 1.1, 4)
 
-    # Draw the rectangle around each face
+    # Draw the rectangle around each face, Adjust the color of rectangle by changing RGB values
     for (x, y, w, h) in faces:
         cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
 

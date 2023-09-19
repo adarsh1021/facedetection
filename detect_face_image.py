@@ -3,8 +3,8 @@ import cv2
 # Load the cascade
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-# Read the input image
-img = cv2.imread('test.jpg')
+# Utilize Built in Camera to Capture Image
+img = cv2.imread(0)
 
 # Convert into grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
